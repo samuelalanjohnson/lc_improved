@@ -1,2 +1,2 @@
 # lc
-a simple program that counts the lines in a file 
+a simple program that counts the lines in a file or stream
