@@ -10,7 +10,7 @@
 int main(int argc,char **argv){
 	int lines = 0;
 	char *ar = NULL;//habit to declare pointers null
-	procFile(argv,&ar);
+	procFile(argv,&ar,argc);
 	while(*ar != '\0'){
 		if(*ar == '\n'){
 			lines++;
