@@ -11,6 +11,10 @@ int main(int argc,char **argv){
 	int lines = 0;
 	char *ar = NULL;//habit to declare pointers null
 	procFile(argv,&ar,argc);
+	if (ar == NULL){
+		puts("FAILED TO ALLOCATE MEMORY");
+		return 1;
+	}
 	while(*ar != '\0'){
 		if(*ar == '\n'){
 			lines++;
