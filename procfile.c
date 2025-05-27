@@ -5,12 +5,12 @@
 void procFile(char **argv,char **ar,int argc){ 
 	unsigned int size;
 	FILE *fp; 
-	if (argc == 1){
+	if (strcmp(argv[1],"-s") == 0){
 		fp = stdin;
 		size = getSize(fp);
 	}
 	else{
-	       	fp = fopen(argv[1],"r");
+	  fp = fopen(argv[1],"r");
 		size = getSize(fp);
 	}
 	char tempAr[250];
